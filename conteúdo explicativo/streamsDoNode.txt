@@ -1,0 +1,26 @@
+    O QUE É O CONCEITO DE STREAM:
+    R: LER OS DADOS PROVINDO DA REQUISIÇÃO HTTP(UPLOAD) AOS POUCOS E PROCESSANDO ELE 
+    ENQUANTO O MESMO ARQUIVO COMPLETO AINDA ESTÁ SENDO ENVIADO PARA O SERVIDOR
+
+    No Nodejs, TODA porta de entrada e saída é considerada automaticamente uma Stream
+     ("REQ" e "RES", por exemplo, eu posso executar uma requisição e enviar ela aos poucos,
+     como também posso enviar uma resposta aos poucos)
+
+
+Tipos de stream: Readble streams X Writeble streams
+
+Importação de clientes via CSV (excel)
+
+1bg =>  1.000.000 linhas (suposição)
+
+usamos POST /upload import.csv para subir esse arquivo CSV para nosso sistema Nodejs
+
+    digamos que esse arquivo de 1bg está subindo 10mb/s,
+isso significa que para subir o arquivo inteiro sem o conceito de stream, 
+demoraria 100s para fazer o upload desse arquivo e subiria 10mb em 10mb até completar o arquivo inteiro
+    logo após isso, o Node iria começar a ler esse arquivo e começar as inserções no banco de dados
+
+10mb => 10.000 linhas 
+    
+    
+     STD in vs STD out: processos de entrada e saída de dados (o que a gente digita no terminal)

@@ -1,0 +1,26 @@
+- criar usuários
+- listagem de usuários
+- Edição de usuários
+- Remoção de usuários
+
+- HTTP
+    - Método HTTP
+    - URL
+
+Métodos HTTP:
+    GET => busca um recurso no back-end
+    PUT => cria um recurso no back-end  
+    POST => atualiza um recurso inteiro no back-end
+    PATCH => atualiza uma informação específica dentro de um recurso do back-end
+    DELETE => deleta um recurso do back-end 
+
+    ou seja, se eu faço um: 
+        GET/users => eu quero dizer que estou buscando um usuário na minha aplicação
+        POST/users => eu quero dizer que estou buscando um usuário na minha apliacação
+
+    As rotas HTTP juntam os métodos http com as url's requisitadas da aplicação
+
+
+    Stateful - Stateless
+
+    Cabeçalhos (RESQUISIÇÃO/RESPOSTA) => Metadados
